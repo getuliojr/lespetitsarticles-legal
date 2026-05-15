@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Les Petits Articles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Back</a>
+    <div class="logo">Les Petits Articles</div>
+  </header>
+  <main class="prose">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: May 15, 2026</p>
+
+    <p>Les Petits Articles ("we", "us", or "our") is a French grammar learning application available on iOS and Android. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you use our app. By creating an account or using the app, you agree to the practices described in this policy.</p>
+
+    <h2>1. Information We Collect</h2>
+    <h3>1.1 Account Information</h3>
+    <ul>
+      <li><strong>Email address</strong> — required to create and identify your account.</li>
+      <li><strong>Password</strong> — stored as a salted hash by Supabase Auth; we never see your plaintext password.</li>
+      <li><strong>OAuth tokens</strong> — if you sign in with Google or Apple, we receive only the identity token and email from those providers. We do not receive your Google or Apple password.</li>
+    </ul>
+
+    <h3>1.2 Profile Information</h3>
+    <ul>
+      <li>Nickname you choose during onboarding.</li>
+      <li>Avatar selection (chosen from a fixed built-in set — no photos uploaded).</li>
+      <li>Preferred translation language.</li>
+    </ul>
+
+    <h3>1.3 Learning &amp; Usage Data</h3>
+    <ul>
+      <li>Exercise answers, accuracy rates, and session scores.</li>
+      <li>Word mastery scores (WMS) per vocabulary item.</li>
+      <li>Phase and concept progress.</li>
+      <li>Daily activity dates and streak data.</li>
+      <li>Virtual coin balances and transaction history (earn-only; no real money involved).</li>
+    </ul>
+
+    <h3>1.4 Device &amp; Technical Data</h3>
+    <ul>
+      <li>Device type and operating system version (collected by Expo / React Native crash reporting).</li>
+      <li>App version.</li>
+      <li>We do <strong>not</strong> collect device identifiers (IDFA, GAID) for advertising purposes.</li>
+    </ul>
+
+    <h3>1.5 Purchase Information</h3>
+    <p>In-app subscription purchases are processed by Apple App Store or Google Play. We use RevenueCat to manage entitlements. We receive only your RevenueCat customer ID, subscription status, and expiry date — we never receive your payment card details.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To create and maintain your account.</li>
+      <li>To synchronise your learning progress across devices.</li>
+      <li>To compute personalised exercise sessions based on your mastery data.</li>
+      <li>To grant or revoke Prime subscription features based on your subscription status.</li>
+      <li>To send optional daily study reminders (only if you enable push notifications).</li>
+      <li>To detect and fix bugs and crashes.</li>
+      <li>We do <strong>not</strong> use your data to serve targeted advertising.</li>
+      <li>We do <strong>not</strong> sell or rent your personal data to third parties.</li>
+    </ul>
+
+    <h2>3. Data Storage and Security</h2>
+    <ul>
+      <li>Your account data is stored on <strong>Supabase</strong> (hosted on AWS us-west-2, Oregon, USA). Supabase is SOC 2 Type II certified.</li>
+      <li>All data in transit is encrypted with TLS 1.2+.</li>
+      <li>All data at rest is encrypted using AES-256 (managed by Supabase / AWS RDS).</li>
+      <li>Learning progress is also stored locally on your device in an SQLite database. This local data is protected by your device's own security mechanisms (file system encryption, Secure Enclave on iOS).</li>
+      <li>Row-level security (RLS) policies ensure that each user can only read and write their own data.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <table>
+      <thead><tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr></thead>
+      <tbody>
+        <tr><td>Supabase</td><td>Auth &amp; database backend</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+        <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+        <tr><td>Apple Sign In</td><td>Optional OAuth login</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td></tr>
+        <tr><td>Google Sign In</td><td>Optional OAuth login</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+        <tr><td>Expo / EAS</td><td>App build &amp; update delivery</td><td><a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>5. Children's Privacy</h2>
+    <p>Les Petits Articles is designed for general audiences including language learners of all ages. We do not knowingly collect personal information from children under 13 (or the applicable age in your jurisdiction) without verifiable parental consent. If you believe a child has provided us personal information, please contact us at <a href="mailto:support@lespetitsarticles.com">support@lespetitsarticles.com</a> and we will promptly delete it.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>Depending on your country or region, you may have the following rights:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of the personal data we hold about you.</li>
+      <li><strong>Rectification</strong> — correct inaccurate data (you can update your nickname and email directly in the app).</li>
+      <li><strong>Erasure</strong> — request full deletion of your account and all data (see <a href="delete-account.html">Delete My Account</a>).</li>
+      <li><strong>Portability</strong> — receive your data in a portable format. Contact us to request an export.</li>
+      <li><strong>Restriction / Objection</strong> — object to specific processing or request we restrict use of your data.</li>
+      <li><strong>Withdraw consent</strong> — where processing is based on consent (e.g. push notifications), you can withdraw at any time in device settings.</li>
+    </ul>
+    <p>To exercise any of these rights, email us at <a href="mailto:support@lespetitsarticles.com">support@lespetitsarticles.com</a>. We will respond within 30 days.</p>
+
+    <h2>7. International Transfers</h2>
+    <p>Our backend infrastructure is located in the United States (AWS us-west-2). If you are located in the European Economic Area (EEA), United Kingdom, or another jurisdiction with data transfer restrictions, your data will be transferred to the US under appropriate safeguards (Standard Contractual Clauses or equivalent mechanisms) as provided by Supabase's Data Processing Agreement.</p>
+
+    <h2>8. Data Retention</h2>
+    <p>We retain your data for as long as your account is active. If you delete your account, all personal data is permanently erased from our servers within 30 days. Backups are purged on a rolling 30-day schedule. Local SQLite data on your device is deleted when you uninstall the app.</p>
+
+    <h2>9. Cookies and Tracking</h2>
+    <p>The mobile app itself does not use cookies. This legal website does not use cookies or any tracking scripts.</p>
+
+    <h2>10. Push Notifications</h2>
+    <p>If you grant notification permission, the app may send daily study reminders at a time you configure. You can disable notifications at any time in your device settings or within the app.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. We will notify you of material changes by updating the "Last updated" date above and, where required by law, by sending an in-app notice. Continued use of the app after changes take effect constitutes acceptance of the updated policy.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>For privacy-related questions, data requests, or complaints:</p>
+    <ul>
+      <li>Email: <a href="mailto:support@lespetitsarticles.com">support@lespetitsarticles.com</a></li>
+      <li>App: Settings → Paramètres → Compte</li>
+    </ul>
+    <p>If you are located in the EEA and believe your rights have not been respected, you have the right to lodge a complaint with your local data protection authority.</p>
+  </main>
+  <footer>
+    <p>© 2026 Les Petits Articles · <a href="mailto:support@lespetitsarticles.com">support@lespetitsarticles.com</a></p>
+  </footer>
+</body>
+</html>

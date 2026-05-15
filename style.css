@@ -1,0 +1,228 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #0f0f1a;
+  color: #e8e8f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7;
+}
+
+a { color: #a78bfa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ── Header ── */
+header {
+  background: rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #FFD700;
+  letter-spacing: -0.3px;
+}
+
+.tagline {
+  font-size: 0.875rem;
+  color: #9090b0;
+  margin-left: 4px;
+}
+
+.back {
+  font-size: 0.875rem;
+  color: #a78bfa;
+  white-space: nowrap;
+}
+
+/* ── Main ── */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+main.center {
+  max-width: 860px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFD700;
+  margin-bottom: 8px;
+}
+
+.meta {
+  color: #9090b0;
+  font-size: 0.875rem;
+  margin-bottom: 32px;
+}
+
+/* ── Home card grid ── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+a.card {
+  display: block;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: background 0.2s, border-color 0.2s;
+  color: inherit;
+}
+
+a.card:hover {
+  background: rgba(167,139,250,0.12);
+  border-color: #a78bfa;
+  text-decoration: none;
+}
+
+.card-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.card h2 { font-size: 1.25rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.card p { color: #b0b0c8; font-size: 0.95rem; }
+
+/* ── Prose content ── */
+.prose h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.prose h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #d0d0e8;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.prose p {
+  margin-bottom: 14px;
+  color: #c8c8de;
+}
+
+.prose ul, .prose ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  color: #c8c8de;
+}
+
+.prose li { margin-bottom: 6px; }
+
+strong { color: #e8e8f0; }
+
+/* ── Table ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 0.9rem;
+}
+
+th {
+  background: rgba(167,139,250,0.15);
+  color: #d0d0e8;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: #c0c0d8;
+}
+
+tr:hover td { background: rgba(255,255,255,0.03); }
+
+/* ── Warning box ── */
+.warning-box {
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251,191,36,0.35);
+  border-radius: 10px;
+  padding: 16px 20px;
+  color: #fbbf24;
+  margin: 20px 0 32px;
+  font-size: 0.95rem;
+}
+
+/* ── Steps visual ── */
+.steps-visual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0 32px;
+  padding: 20px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(167,139,250,0.15);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  color: #d0c0ff;
+}
+
+.step-num {
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-arrow { color: #6060a0; font-size: 1.1rem; }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 0.8rem;
+  color: #606080;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  main { padding: 32px 16px 48px; }
+  h1 { font-size: 1.6rem; }
+  .steps-visual { flex-direction: column; align-items: flex-start; }
+  .step-arrow { transform: rotate(90deg); }
+  header { padding: 16px; }
+}
